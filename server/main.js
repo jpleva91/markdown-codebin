@@ -5,4 +5,8 @@ Meteor.startup(() => {
   Meteor.publish('bins', function() {
     return Bins.find({ ownerId: this.userId });
   });
+
+  Meteor.publish('sharedBins', function() {
+
+  });
 });
